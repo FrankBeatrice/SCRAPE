@@ -1,0 +1,573 @@
+@import url(font-awesome.min.css);
+@import url("https://fonts.googleapis.com/css?family=Pacifico|Source+Sans+Pro:200,400");
+
+/*
+    Bootstrap & TEMPLATED
+
+/* Reset */
+
+/*
+youre going to have 3 divs inside 1 div
+
+the big div is going to have position:absolute;
+
+than the 3 little divs will have posiition relitive
+
+then you can move the 3 little divs with:
+
+left: 1px;
+top: 1px;
+bottom: 1px;
+right: 1px;
+
+
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+form,
+label,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    
+}
+
+body {
+    line-height: 1;
+}
+
+body {
+    background: #f4f4f4;
+}
+
+body.is-loading *,
+body.is-loading *:before,
+body.is-loading *:after {
+    -moz-animation: none !important;
+    -webkit-animation: none !important;
+    -ms-animation: none !important;
+    animation: none !important;
+    -moz-transition: none !important;
+    -webkit-transition: none !important;
+    -ms-transition: none !important;
+    transition: none !important;
+    color:white;
+}
+
+
+/* Type */
+
+body {
+    background-color: #f4f4f4;
+    color: #666666;
+    color:white;
+}
+
+body,
+input,
+select,
+textarea {
+    font-family: "Source Sans Pro", Helvetica, sans-serif;
+    font-size: 17pt;
+    font-weight: 200;
+    line-height: 1.65;
+}
+
+@media screen and (max-width: 1680px) {
+    body,
+    input,
+    select,
+    textarea {
+        font-size: 13pt;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    body,
+    input,
+    select,
+    textarea {
+        font-size: 12pt;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    body,
+    input,
+    select,
+    textarea {
+        font-size: 11pt;
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 0 0 1em 0;
+    text-transform: uppercase;
+    letter-spacing: 0.375rem;
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+    color: inherit;
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 1.75em;
+}
+
+h3 {
+    font-size: 1.25em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #444444;
+}
+
+blockquote {
+    border-left-color: #666666;
+}
+
+code {
+    background: rgba(144, 144, 144, 0.075);
+    border-color: #666666;
+}
+
+hr {
+    border-bottom-color: #666666;
+}
+
+
+/* Button */
+
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+button,
+.button {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    -moz-transition: box-shadow 0.2s ease-in-out, background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    -webkit-transition: box-shadow 0.2s ease-in-out, background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    -ms-transition: box-shadow 0.2s ease-in-out, background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    transition: box-shadow 0.2s ease-in-out, background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    border-radius: 4px;
+    border: 0;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 400;
+    height: 3.5em;
+    line-height: 3.5em;
+    padding: 0 2em 0 2.375em;
+    text-align: center;
+    text-decoration: none;
+    white-space: nowrap;
+    text-transform: uppercase;
+    letter-spacing: 0.325em;
+    font-size: 0.725em;
+}
+
+@media screen and (max-width: 480px) {
+    input[type="submit"],
+    .button {
+        padding: 0;
+    }
+}
+
+input[type="submit"],
+button,
+.button {
+    background-color: transparent;
+    box-shadow: inset 0 0 0 2px #666666;
+    color: #444444 !important;
+}
+
+input[type="submit"]:hover,
+button:hover,
+.button:hover {
+    color: #EF6480 !important;
+    box-shadow: inset 0 0 0 2px #EF6480;
+}
+
+
+/* Form */
+
+form {
+    margin: 0 0 2em 0;
+}
+
+label {
+    display: block;
+    font-size: 0.9em;
+    font-weight: 400;
+    margin: 0 0 1em 0;
+}
+
+input[type="text"],
+select,
+textarea {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    border-radius: 4px;
+    border: none;
+    border: solid 1px;
+    color: inherit;
+    display: block;
+    outline: 0;
+    padding: 0 1em;
+    text-decoration: none;
+    width: 100%;
+}
+
+input[type="text"]:invalid,
+select:invalid,
+textarea:invalid {
+    box-shadow: none;
+}
+
+input[type="text"],
+select {
+    height: 2.75em;
+}
+
+textarea {
+    padding: 0.75em 1em;
+}
+
+label {
+    color: #444444;
+}
+
+input[type="text"],
+select,
+textarea {
+    background: rgba(144, 144, 144, 0.075);
+    border-color: #666666;
+}
+
+input[type="text"]:focus,
+select:focus,
+textarea:focus {
+    border-color: #EF6480;
+    box-shadow: 0 0 0 1px #EF6480;
+}
+
+
+/* Table */
+
+.table-wrapper {
+    -webkit-overflow-scrolling: touch;
+    overflow-x: auto;
+}
+
+table {
+    margin: 0 0 2em 0;
+    width: 100%;
+}
+
+table tbody tr {
+    border: solid 1px;
+    border-left: 0;
+    border-right: 0;
+}
+
+table td {
+    padding: 0.75em 0.75em;
+}
+
+table th {
+    font-size: 0.9em;
+    font-weight: 400;
+    padding: 0 0.75em 0.75em 0.75em;
+    text-align: left;
+}
+
+table thead {
+    border-bottom: solid 2px;
+}
+
+table tfoot {
+    border-top: solid 2px;
+}
+
+table.alt {
+    border-collapse: separate;
+}
+
+table.alt tbody tr td {
+    border: solid 1px;
+    border-left-width: 0;
+    border-top-width: 0;
+}
+
+table.alt tbody tr td:first-child {
+    border-left-width: 1px;
+}
+
+table.alt tbody tr:first-child td {
+    border-top-width: 1px;
+}
+
+table.alt thead {
+    border-bottom: 0;
+}
+
+table.alt tfoot {
+    border-top: 0;
+}
+
+table tbody tr {
+    border-color: #666666;
+}
+
+table tbody tr:nth-child(2n + 1) {
+    background-color: rgba(144, 144, 144, 0.075);
+}
+
+table th {
+    color: #444444;
+}
+
+table thead {
+    border-bottom-color: #666666;
+}
+
+table tfoot {
+    border-top-color: #666666;
+}
+
+table.alt tbody tr td {
+    border-color: #666666;
+}
+
+#blist {
+
+margin-left:70px; 
+
+
+}
+
+#enter_text {
+
+    margin-top:20px; 
+    margin-bottom:20px;
+
+}
+}
+#city {
+	background-image: url("../../assets/images/city.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+	z-index: -30;
+	height: 100%;
+}
+
+.container {
+  width: 400px;
+  height: 100%;
+	margin:2% auto;
+  position: relative;
+  perspective: 1000px;
+}
+
+#cube {
+
+	margin:8% auto 0 auto;
+  width: 400px;
+  height: 400px;
+  transform-style: preserve-3d;
+  transform: translateZ( -100px );
+/*  opacity: 0.3;*/
+}
+
+#cube figure {
+  margin: 0;
+  width: 400px;
+  height: 400px;
+  display: block;
+  position: absolute;
+  border: 3px solid black;
+  cursor: pointer;
+	overflow: auto;
+}
+
+#face-color{
+	background-color: clear;
+	opacity: 0.075;
+	width: 400px;
+	height: 400px;
+	position: absolute;
+}
+
+
+
+#headline{
+	color: white;
+	font-size: 40px;
+	opacity: .85;
+}
+
+#typewriter-headline, #typewriter-summary{
+	color: white;
+	font-weight: bold;
+	font-size: 26px;
+	line-height:38px;
+	z-index: 10;
+	padding:20px;
+}
+#typewriter-summary{
+	padding-top: 0;
+}
+
+#seek-box{
+	/*	background-color: white;*/
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	left: 100px;
+	bottom: 100px;
+	background-image: url("../../assets/images/cube2.png");
+	cursor: pointer;
+}
+#input-area{
+	float:left;
+	margin-top:2%;
+}
+#input-box input[type="text"], textarea {
+	color: deepskyblue;
+	background-color : black;
+    text-align: left;
+    padding-top: 1px;
+    width: 200px;
+    height: 300px;
+    font-size: 20px;
+    opacity: .78;
+}
+
+#note-button {
+  color: black;
+  opacity: .45;
+	background-color : deepskyblue;
+	width: 200px;
+	height: 110px;
+}
+
+#saved-area{
+	float:right;
+	margin-top:2%;
+}
+#note-box {
+	background-color: black;
+    font-size: 20px;
+    opacity: .58;
+    width: 200px;
+    height: 300px;
+}
+
+#delete-button {
+    color: black;
+    opacity: .65;
+	background-color : darkslategray;
+	width: 200px;
+	height: 110px;
+	cursor: pointer;
+}
+
+.button {
+	width: 80px;
+	height: 80px;
+	display:block;
+	margin:0px auto;
+	padding:10px;
+	cursor: pointer;
+}
+
+@media screen and (min-height:900px) {
+	.container, #input-area, #saved-area{
+		margin-top: 20%;
+	}
+
+	#cube {
+		margin-top: 15%;
+	}
+}
+
+#face-color
+{
+    color:blue;
+}
+
+font {
+
+
+}
